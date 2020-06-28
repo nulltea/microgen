@@ -53,7 +53,7 @@ func (s operations) generateUseCaseLayer() error {
 		return fmt.Errorf("unable to create USECASE/STORAGE dir: " + err.Error())
 	}
 
-	if err := os.MkdirAll("usecase/business", os.ModePerm); err != nil {
+	if err := os.MkdirAll("usecase/businesgen", os.ModePerm); err != nil {
 		return fmt.Errorf("unable to create USECASE/BUSINESS dir: " + err.Error())
 	}
 
