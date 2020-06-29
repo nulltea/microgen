@@ -1,6 +1,6 @@
-package plugins
+package plugin
 
-import "github.com/timoth-y/microgen/usecase/codegen"
+import "github.com/timoth-y/microgen/core/codegen"
 
 type Plugin interface {
 	Name() string

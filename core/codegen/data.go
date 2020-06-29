@@ -1,6 +1,6 @@
 package codegen
 
-import "github.com/timoth-y/microgen/config"
+import "github.com/timoth-y/microgen/core/config"
 
 type Data struct {
 	Config          *config.Config
@@ -9,3 +9,8 @@ type Data struct {
 	Interfaces      map[string]*Interface
 	Types           []Type
 }
+
+func BuildData(cfg *config.Config) (*Data, error) {
+	return nil, nil
+}
+

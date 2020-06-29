@@ -4,7 +4,7 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
-func (h Handler) InitCMD() *cli.Command {
+func InitCMD() *cli.Command {
 	return &cli.Command{
 		Name: "init",
 		Usage: "Initialize microservice project via generating base layout structure",
@@ -13,7 +13,7 @@ func (h Handler) InitCMD() *cli.Command {
 			&cli.StringFlag{Name: "config, c", Usage: "the config filename or path"},
 		},
 		Action: func(ctx *cli.Context) error{
-			return h.service.Init(parseFlags(ctx))
+			return nil
 		},
 	}
 }
