@@ -14,11 +14,6 @@ type DirectoryGenerator interface {
 	GenerateDirectory() error
 }
 
-type SubPluginCollection interface {
-	SubscribeSubPlugin(plugin Plugin)
-	ExecuteSubPlugin() error
-}
-
 type TypeInjector interface {
 	InjectType() error
 }

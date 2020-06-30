@@ -3,12 +3,16 @@ package cmd
 import (
 	"github.com/urfave/cli/v2"
 
+	context "github.com/timoth-y/microgen/core/context"
 	"github.com/timoth-y/microgen/core/meta"
 )
 
-func parseFlags(ctx *cli.Context) meta.OperationParam {
-	return meta.OperationParam{
-		Verbose: ctx.Bool("verbose"),
-		Config: ctx.String("config"),
-	}
+func NewContext(cli *cli.Context) *context.Context {
+	ctx := &context.Context{}
+	ctx.ApplyParams(meta.ContextParam{
+		Verbose: cli.Bool("verbose"),
+		Config: cli.String("config"),
+	})
+	return ctx
 }
+

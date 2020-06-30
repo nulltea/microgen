@@ -28,7 +28,7 @@ func NewPlugin(filename string) plugin.Plugin {
 }
 
 func (p *_plugin) Name() string {
-	return "servergen"
+	return "ServerGen"
 }
 
 func (p *_plugin) GenerateCode(data *codegen.Data) error {

@@ -10,7 +10,7 @@ type Data struct {
 	Types           []Type
 }
 
-func BuildData(cfg *config.Config) (*Data, error) {
+func BuildData(cfg config.Config) (*Data, error) {
 	return nil, nil
 }
 

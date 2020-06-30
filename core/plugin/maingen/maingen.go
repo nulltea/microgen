@@ -6,17 +6,17 @@ import (
 )
 
 type _plugin struct {
-	filename string
+
 }
 
 var _ plugin.CodeGenerator = &_plugin{}
 
-func NewPlugin(filename string) plugin.Plugin {
-	return &_plugin{filename}
+func NewPlugin() plugin.Plugin {
+	return &_plugin{}
 }
 
 func (p *_plugin) Name() string {
-	return "maingen"
+	return "MainGen"
 }
 
 func (p *_plugin) GenerateCode(data *codegen.Data) error {

@@ -33,11 +33,11 @@ func Execute() {
 		return nil
 	}
 
-	handler := NewCommander(usecase.NewOperationService())
-	initCMD := handler.InitCMD()
 	app.Action = initCMD.Action
 	app.Commands = []*cli.Command{
 		initCMD,
+		genCMD,
+		validCMD,
 	}
 
 	if err := app.Run(os.Args); err != nil {

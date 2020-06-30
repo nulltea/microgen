@@ -1,6 +1,6 @@
 package meta
 
-type OperationParam struct {
+type ContextParam struct {
 	Verbose bool
 	Config string
 }
