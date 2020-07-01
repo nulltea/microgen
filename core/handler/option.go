@@ -2,7 +2,7 @@ package handler
 
 import (
 	"github.com/timoth-y/microgen/core/context"
-	"github.com/timoth-y/microgen/core/plugin"
+	"github.com/timoth-y/microgen/usecase/plugin"
 )
 
 type Option func(ctx *context.Context, plugins *[]plugin.Plugin)
@@ -27,6 +27,6 @@ func AddPlugins(p plugin.Plugin) Options {
 	return options
 }
 
-func (o Options) AddPlugins(p plugin.Plugin) Options {
+func (o Options) AddPlugin(p plugin.Plugin) Options {
 	return append(o, AddPlugin(p))
 }

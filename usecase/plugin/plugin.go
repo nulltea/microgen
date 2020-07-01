@@ -11,7 +11,7 @@ type CodeGenerator interface {
 }
 
 type DirectoryGenerator interface {
-	GenerateDirectory() error
+	GenerateDirectory()
 }
 
 type TypeInjector interface {

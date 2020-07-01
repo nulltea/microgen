@@ -7,8 +7,6 @@ import (
 	"os"
 
 	"github.com/urfave/cli/v2"
-
-	"github.com/timoth-y/microgen/usecase"
 )
 
 const Version = "v0.0.1-dev"
